@@ -1,0 +1,394 @@
+{
+  "designerVersion" : "1.8.39",
+  "id" : "SuiviDesDemandes",
+  "name" : "SuiviDesDemandes",
+  "lastUpdate" : 1552555601427,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Application de gestion des demandes de congés"
+      },
+      "level" : {
+        "type" : "constant",
+        "value" : "Level 1"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "center"
+      }
+    },
+    "reference" : "52e36720-6f39-411f-be89-4dc8dce84ec8",
+    "hasValidationError" : false,
+    "id" : "pbTitle"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Suivi des demandes"
+      },
+      "level" : {
+        "type" : "constant",
+        "value" : "Level 3"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "center"
+      }
+    },
+    "reference" : "34787fc4-ed3f-4d79-bbab-c67ea68353b4",
+    "hasValidationError" : false,
+    "id" : "pbTitle"
+  } ], [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : "demandesConges"
+      }
+    },
+    "reference" : "025caf4b-2f80-433a-91b2-427672e66eff",
+    "hasValidationError" : false,
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 3
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "required" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "minLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "maxLength" : {
+          "type" : "constant"
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "Num"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 3
+        },
+        "placeholder" : {
+          "type" : "interpolation"
+        },
+        "value" : {
+          "type" : "variable",
+          "value" : "$valeur +1"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "text"
+        },
+        "min" : {
+          "type" : "constant"
+        },
+        "max" : {
+          "type" : "constant"
+        },
+        "step" : {
+          "type" : "constant",
+          "value" : 1
+        }
+      },
+      "reference" : "6f24611c-00de-4429-9d09-c7ee1740505e",
+      "hasValidationError" : false,
+      "id" : "pbInput"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 3
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "required" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "Date de début"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 3
+        },
+        "value" : {
+          "type" : "variable",
+          "value" : "$item.dateDebut"
+        },
+        "dateFormat" : {
+          "type" : "constant",
+          "value" : "dd/MM/yyyy"
+        },
+        "placeholder" : {
+          "type" : "interpolation",
+          "value" : "Enter a date (mm/dd/yyyy)"
+        },
+        "showToday" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "todayLabel" : {
+          "type" : "interpolation",
+          "value" : "Today"
+        }
+      },
+      "reference" : "bee2db2f-1935-4cf7-a6cf-1d862e228ab8",
+      "hasValidationError" : false,
+      "id" : "pbDatePicker"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 3
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "required" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "minLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "maxLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "Nombre de jours"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 3
+        },
+        "placeholder" : {
+          "type" : "interpolation"
+        },
+        "value" : {
+          "type" : "variable",
+          "value" : "$item.nombreJours"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "text"
+        },
+        "min" : {
+          "type" : "constant"
+        },
+        "max" : {
+          "type" : "constant"
+        },
+        "step" : {
+          "type" : "constant",
+          "value" : 1
+        }
+      },
+      "reference" : "0b01fb01-a140-4d5a-94d2-0c8cf6cc2a74",
+      "hasValidationError" : false,
+      "id" : "pbInput"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 3
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "required" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "minLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "maxLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "Status"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 3
+        },
+        "placeholder" : {
+          "type" : "interpolation"
+        },
+        "value" : {
+          "type" : "variable",
+          "value" : "$item.estApprouveeLabel"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "text"
+        },
+        "min" : {
+          "type" : "constant"
+        },
+        "max" : {
+          "type" : "constant"
+        },
+        "step" : {
+          "type" : "constant",
+          "value" : 1
+        }
+      },
+      "reference" : "5ce7d4ef-67a4-4722-8bf8-92cc6ab92d55",
+      "hasValidationError" : false,
+      "id" : "pbInput"
+    } ] ]
+  } ] ],
+  "assets" : [ {
+    "id" : "0eaf6da0-fbb3-4347-9f4c-1f4dd4fe03e8",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "sessionInfo" : {
+      "type" : "url",
+      "value" : "../API/system/session/unusedId",
+      "exposed" : false
+    },
+    "demandesConges" : {
+      "type" : "url",
+      "value" : "../API/bdm/businessData/com.company.model.DemandeConges?q=findByIdDemandeur&p=0&c=100&f=idDemandeur={{sessionInfo.user_id}}",
+      "exposed" : false
+    },
+    "ajoutLibelleStatutDemandeConges" : {
+      "type" : "expression",
+      "value" : "for (let demande of $data.demandesConges) {\nif(demande.estApprouvee) {\ndemande.estApprouveeLabel = \"Approuvée\";\n} else if(demande.estApprouvee === false) {\ndemande.estApprouveeLabel = \"Rejetée\";\n} else {\ndemande.estApprouveeLabel = \"En cours\";\n}\n}",
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "6d4b8719-d93a-48bb-943c-0de89864c918",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer",
+  "displayName" : "SuiviDesDemandes"
+}
